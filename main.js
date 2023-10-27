@@ -1,4 +1,4 @@
-//Declaração/criação da função TocaSomPom
+//Declaração/criação da função TocaSom
 function TocaSomPom(){
     document.querySelector('#som_tecla_pom'). play();
 }
@@ -6,8 +6,12 @@ function TocaSomPom(){
 document.querySelector('tecla_pom').onclick = TocaSomPom;
 
 let contador = 0;
-white(contador < 9){
-    litaDeTeclas[0]. onclick = tocaSomPom;
+white(contador < listaDeTeclas.length){
+    const efeito = listaDeTeclas[contador].classlist[1];
+    const idAudio = "#som_" + efeito;
+    litaDeTeclas[contador].onclick = function(){
+        tocaSomPom(idAudio);
+    }
     contador = contador + 1;
     console.long(contador);
 }
