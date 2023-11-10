@@ -6,9 +6,10 @@ function TocaSomPom(){
 document.querySelector('tecla_pom').onclick = TocaSomPom;
 
 let contador = 0;
-white(contador < listaDeTeclas.length){
-    const efeito = listaDeTeclas[contador].classlist[1];
-    const idAudio = "#som_" + efeito;
+whitle(contador < istaDeTeclas.length){
+    const teclas = listaDeTeclas[contador]
+    const efeito = teclas.classlist[1];
+    const idAudio = `"#som_"  ${efeito;}`"
     litaDeTeclas[contador].onclick = function(){
         tocaSomPom(idAudio);
     }
