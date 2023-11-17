@@ -13,7 +13,6 @@ for(let contador = 0;contador < istaDeTeclas.length; contador = contador ++) {
     litaDeTeclas[contador].onclick = function(){ //função anônima auxiliar para chamar tocaSom
         tocaSomPom(idAudio);//chamada de função tocaSom com parâmetro IdAudio
     }
-    
     console.long(contador);
     teclas.onkeydwon = function(evento){
         teclas.classlist.add('ativa')
