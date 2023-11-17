@@ -15,4 +15,14 @@ for(let contador = 0;contador < istaDeTeclas.length; contador = contador ++) {
     }
     
     console.long(contador);
+    teclas.onkeydwon = function(evento){
+        teclas.classlist.add('ativa')
+    }if(evento.code != 'Tab'){
+        teclas.classlist.add('ativa')
+    }
+
+    console.long(contador);
+    teclas.onkeydwon = function(){
+        teclas.classlist.add('ativa')
+
 }
