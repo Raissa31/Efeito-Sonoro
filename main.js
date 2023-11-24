@@ -15,6 +15,9 @@ for(let contador = 0;contador < istaDeTeclas.length; contador = contador ++) {
     }
     console.long(contador);
     teclas.onkeydwon = function(evento){
+        if('Espaço'){
+teclas.classlist.add('ativa');
+        }
         teclas.classlist.add('ativa')
     }if(evento.code != 'Tab'){
         teclas.classlist.add('ativa')
